@@ -1,0 +1,166 @@
+
+body {
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: row;
+	background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+li {
+	list-style-type: none;
+}
+
+.gradient {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background: #ffffff url('../images/page-fade.png') repeat-x bottom left;
+}
+
+/*Левый бар с лого и основной навигацией сайта*/
+
+aside {
+	position: fixed;
+	width: 160px;
+	padding-left: 8px;
+}
+.logo {
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: url('../images/wikilogo.png') no-repeat 50% 50%;
+}
+nav {
+    margin-left: 19px;
+    padding: 4px 0px;
+    color: #0645ad;
+    margin-top: 6px;
+}
+
+nav h1 {
+	padding: 4px 0px;
+    font-size: 0.75em;
+    color: #444444;
+    background: url('../images/nav_hr.png') no-repeat bottom left;
+}
+
+nav ul {
+    padding-top: 5px;
+}
+
+nav ul li {
+	line-height: 1.125em;
+	font-size: 0.75em;
+    padding: 0.25em 0px;
+}
+
+.main-nav {
+    margin-top: 16px;
+}  /*устанавливает маргин только для первого nav благодаря обращению к нему через класс,что даёт более высокий "вес" для этого селектора*/
+
+/*Блок с основным контентом страницы*/
+
+.content {
+	z-index: 10;
+	margin-left: 170px;
+	width: 100%;
+	min-width: 500px;
+	max-width: 1900px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+
+header {
+}
+
+header ul li, header ul li a {
+	line-height: 1.125em;
+}
+
+.personal ul {
+	position: absolute;
+	right: 1em;
+	top: 0.6em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.personal li {
+	display: inline;
+	font-size: 0.75em;
+	color: #707070;
+	margin-left: 9px;
+	line-height: 1.6em;
+}
+
+i.fa {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	font-size: 1.2em;
+}
+
+.top-navigation {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.top-navigation ul {
+	display: flex;
+	flex-direction: row;	
+}
+
+.top-navigation ul li {	
+	background: url('../images/button_grad.png') repeat-x bottom left;
+}
+
+.top-navigation ul li.selected{
+	background: #fff;
+	color: #222;
+}
+
+.top-navigation ul li.selected a:hover{
+	background: #fff;
+	color: #222;
+	text-decoration: none;
+}
+
+.top-navigation ul li a {
+	display: block;
+	background: url('../images/li_vertical_grad.png') no-repeat bottom right;
+	font-size: 0.8em;
+	cursor: pointer;
+	padding: 1.25em 0.625em 0.8em 0.625em;
+}
+
+.right-nav {
+	display: flex;
+	flex-direction: row;
+}
+	.search form {
+	margin-top: 0.70em;
+	margin-left: 6px;
+}
+main {
+	height: 300px;
+	border: 1px solid #a7d7f9;
+	margin-top: -1px;
+}
