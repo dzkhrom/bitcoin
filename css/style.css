@@ -134,6 +134,9 @@ i.fa {
 
 .top-navigation ul li.selected{
 	background: #fff;
+}
+
+.top-navigation ul li.selected a{
 	color: #222;
 }
 
@@ -154,11 +157,28 @@ i.fa {
 .right-nav {
 	display: flex;
 	flex-direction: row;
+	margin-right: 16px;
 }
-	.search form {
+.search {
+	width: 20vw;
+}
+
+.search form {
 	margin-top: 0.70em;
 	margin-left: 6px;
+	position: relative;
 }
+
+#searchInput {
+
+	width: 100%;
+}
+#searchButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 main {
 	height: 300px;
 	border: 1px solid #a7d7f9;
